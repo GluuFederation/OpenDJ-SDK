@@ -160,39 +160,39 @@
 
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>clirr-maven-plugin</artifactId>
-                        <version>${clirrPluginVersion}</version>
-                        <inherited>true</inherited>
-                        <configuration>
-                            <comparisonArtifacts>
-                                <comparisonArtifact>
-                                    <groupId>${project.groupId}</groupId>
-                                    <artifactId>opendj-ldap-sdk</artifactId>
-                                    <!-- former name of this jar -->
-                                    <version>3.0.0-SNAPSHOT</version>
-                                </comparisonArtifact>
-                            </comparisonArtifacts>
-                            <excludes>
-                                <exclude>com/**</exclude>
-                            </excludes>
-                            <ignoredDifferencesFile>clirr-ignored-api-changes.xml</ignoredDifferencesFile>
-                        </configuration>
+<!--                     <plugin> -->
+<!--                         <groupId>org.codehaus.mojo</groupId> -->
+<!--                         <artifactId>clirr-maven-plugin</artifactId> -->
+<!--                         <version>${clirrPluginVersion}</version> -->
+<!--                         <inherited>true</inherited> -->
+<!--                         <configuration> -->
+<!--                             <comparisonArtifacts> -->
+<!--                                 <comparisonArtifact> -->
+<!--                                     <groupId>${project.groupId}</groupId> -->
+<!--                                     <artifactId>opendj-ldap-sdk</artifactId> -->
+<!--                                     former name of this jar -->
+<!--                                     <version>3.0.0-SNAPSHOT</version> -->
+<!--                                 </comparisonArtifact> -->
+<!--                             </comparisonArtifacts> -->
+<!--                             <excludes> -->
+<!--                                 <exclude>com/**</exclude> -->
+<!--                             </excludes> -->
+<!--                             <ignoredDifferencesFile>clirr-ignored-api-changes.xml</ignoredDifferencesFile> -->
+<!--                         </configuration> -->
 
-                        <executions>
-                            <execution>
-                                <id>mvn clirr:check</id>
-                            </execution>
+<!--                         <executions> -->
+<!--                             <execution> -->
+<!--                                 <id>mvn clirr:check</id> -->
+<!--                             </execution> -->
 
-                            <execution>
-                                <id>mvn verify</id>
-                                <goals>
-                                    <goal>check</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                             <execution> -->
+<!--                                 <id>mvn verify</id> -->
+<!--                                 <goals> -->
+<!--                                     <goal>check</goal> -->
+<!--                                 </goals> -->
+<!--                             </execution> -->
+<!--                         </executions> -->
+<!--                     </plugin> -->
                 </plugins>
             </build>
 
