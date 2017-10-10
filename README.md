@@ -16,6 +16,15 @@
 
 OpenDJ SDK
 ==========
+[![Build Status](https://travis-ci.org/OpenIdentityPlatform/OpenDJ-SDK.svg)](https://travis-ci.org/OpenIdentityPlatform/OpenDJ-SDK)
+
+## How-to build
+
+* git clone --recursive  https://github.com/OpenIdentityPlatform/OpenDJ-SDK.git
+* mvn clean install -f OpenDJ-SDK
+
+About
+==========
 
 The **OpenDJ LDAP SDK** provides a set of modern, developer-friendly Java APIs as part of the
 [OpenDJ](http://opendj.forgerock.org) product suite, which is actively maintained and supported by
