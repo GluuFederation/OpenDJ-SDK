@@ -148,7 +148,7 @@
             scp://community.internal.forgerock.com/var/www/vhosts/opendj.forgerock.org/httpdocs
         </site.distribution.url>
 
-        <forgerock-build-tools.version>1.0.2</forgerock-build-tools.version>
+        <forgerock-build-tools.version>1.0.3</forgerock-build-tools.version>
         <forgerock-doc-plugin.version>3.1.0</forgerock-doc-plugin.version>
         <grizzly-framework.version>2.3.23</grizzly-framework.version>
         <metrics-core.version>3.1.2</metrics-core.version>

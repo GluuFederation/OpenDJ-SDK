@@ -12,6 +12,7 @@
   information: "Portions copyright [year] [name of copyright owner]".
 
   Copyright 2016 ForgeRock AS.
+  Portions copyright 2017 3A Systems, LLC
   -->
 
 OpenDJ SDK
@@ -20,15 +21,17 @@ OpenDJ SDK
 
 ## How-to build
 
-* git clone --recursive  https://github.com/OpenIdentityPlatform/OpenDJ-SDK.git
-* mvn clean install -f OpenDJ-SDK
+```bash
+git clone --recursive  https://github.com/OpenIdentityPlatform/OpenDJ-SDK.git
+mvn clean install -f OpenDJ-SDK
+```
 
 About
 ==========
 
 The **OpenDJ LDAP SDK** provides a set of modern, developer-friendly Java APIs as part of the
-[OpenDJ](http://opendj.forgerock.org) product suite, which is actively maintained and supported by
-[ForgeRock](http://www.forgerock.com). The product suite includes the client SDK alongside command-line tools and
+[OpenDJ](https://github.com/OpenIdentityPlatform/OpenDJ) product suite. 
+The product suite includes the client SDK alongside command-line tools and
 sample code, a 100% pure Java directory server, and more. You can use **OpenDJ SDK** to create client applications
 for use with any server that complies with the
 [RFC 4510: LDAP - Technical Specification Road Map](http://tools.ietf.org/html/rfc4510).
@@ -52,29 +55,6 @@ methods:
 
 Maven
 -----
-
-By far the simplest method is to develop your application using Maven and add the following settings to your pom.xml:
-
-```xml
-<repositories>
-  <repository>
-    <id>forgerock-staging-repository</id>
-    <name>ForgeRock Release Repository</name>
-    <url>http://maven.forgerock.org/repo/releases</url>
-    <snapshots>
-      <enabled>false</enabled>
-    </snapshots>
-  </repository>
-  <repository>
-    <id>forgerock-snapshots-repository</id>
-    <name>ForgeRock Snapshot Repository</name>
-    <url>http://maven.forgerock.org/repo/snapshots</url>
-    <releases>
-      <enabled>false</enabled>
-    </releases>
-  </repository>
-</repositories>
-```
 
 The following dependencies will load both the [OpenDJ Core APIs](opendj-core) and the [OpenDJ Grizzly](opendj-grizzly)
 network transport. Remember to override the version according to your needs:
@@ -107,16 +87,6 @@ required, in which case you can simply declare a dependency on the OpenDJ core A
 </dependencies>
 ```
 
-Build it yourself
------------------
-
-You need `git` and `maven` in order to get the source code and build it:
-
-```bash
-git clone ssh://git@stash.forgerock.org:7999/opendj/opendj-sdk.git
-cd opendj-sdk
-mvn clean install
-```
 
 Getting started
 ===============

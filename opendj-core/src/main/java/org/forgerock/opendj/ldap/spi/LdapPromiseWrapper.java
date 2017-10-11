@@ -167,6 +167,13 @@ class LdapPromiseWrapper<R, P extends Promise<R, LdapException>> implements Ldap
         return wrappedPromise.thenAsync(onResult, onException);
     }
 
+	@Override
+	public <VOUT, EOUT extends Exception> Promise<VOUT, EOUT> thenAsync(AsyncFunction<? super R, VOUT, EOUT> onResult,
+			AsyncFunction<? super LdapException, VOUT, EOUT> onException,
+			AsyncFunction<? super RuntimeException, VOUT, EOUT> onRuntimeException) {
+		return wrappedPromise.thenAsync(onResult, onException);
+	}
+	
     @Override
     // @Checkstyle:ignore
     public <EOUT extends Exception> Promise<R, EOUT> thenCatch(Function<? super LdapException, R, EOUT> onException) {
@@ -189,5 +196,28 @@ class LdapPromiseWrapper<R, P extends Promise<R, LdapException>> implements Ldap
     public P getWrappedPromise() {
         return wrappedPromise;
     }
+
+	@Override
+	public Promise<R, LdapException> thenCatchRuntimeException(
+			Function<? super RuntimeException, R, LdapException> onRuntimeException) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Promise<R, LdapException> thenCatchRuntimeExceptionAsync(
+			AsyncFunction<? super RuntimeException, R, LdapException> onRuntimeException) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <VOUT, EOUT extends Exception> Promise<VOUT, EOUT> then(Function<? super R, VOUT, EOUT> onResult,
+			Function<? super LdapException, VOUT, EOUT> onException,
+			Function<? super RuntimeException, VOUT, EOUT> onRuntimeException) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }
