@@ -132,7 +132,6 @@
 <!--     </repositories> -->
 
     <modules>
-    		<module>forgerock-parent</module>
         <module>opendj-sdk-bom</module>
         <module>opendj-doc-maven-plugin</module>
         <module>opendj-core</module>
