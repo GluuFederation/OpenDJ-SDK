@@ -23,7 +23,7 @@ OpenDJ SDK
 
 ```bash
 git clone --recursive  https://github.com/OpenIdentityPlatform/OpenDJ-SDK.git
-mvn clean install -f forgerock-parent
+mvn clean install -f OpenDJ-SDK/forgerock-parent
 mvn clean install -f OpenDJ-SDK
 ```
 
