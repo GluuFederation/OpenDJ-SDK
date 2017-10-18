@@ -65,12 +65,12 @@ network transport. Remember to override the version according to your needs:
   <dependency>
     <groupId>org.forgerock.opendj</groupId>
     <artifactId>opendj-core</artifactId>
-    <version>3.0.0</version>
+    <version>4.0.0-SNAPSHOT</version>
   </dependency>
   <dependency>
     <groupId>org.forgerock.opendj</groupId>
     <artifactId>opendj-grizzly</artifactId>
-    <version>3.0.0</version>
+    <version>4.0.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
@@ -83,7 +83,7 @@ required, in which case you can simply declare a dependency on the OpenDJ core A
   <dependency>
     <groupId>org.forgerock.opendj</groupId>
     <artifactId>opendj-core</artifactId>
-    <version>3.0.0</version>
+    <version>4.0.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
