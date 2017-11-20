@@ -134,8 +134,8 @@
     <modules>
         <module>opendj-sdk-bom</module>
         <module>opendj-doc-maven-plugin</module>
-        <module>opendj-core</module>
-        <module>opendj-grizzly</module>
+        <module>opendj-sdk-core</module>
+        <module>opendj-sdk-grizzly</module>
         <module>opendj-cli</module>
         <module>opendj-ldap-toolkit</module>
         <module>opendj-ldap-sdk-examples</module>
@@ -185,7 +185,7 @@
             <!-- OpenDJ SDK -->
             <dependency>
                 <groupId>org.forgerock.opendj</groupId>
-                <artifactId>opendj-core</artifactId>
+                <artifactId>opendj-sdk-core</artifactId>
                 <type>test-jar</type>
                 <version>${project.version}</version>
                 <scope>test</scope>

@@ -43,12 +43,12 @@
 
         <dependency>
             <groupId>org.forgerock.opendj</groupId>
-            <artifactId>opendj-core</artifactId>
+            <artifactId>opendj-sdk-core</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.forgerock.opendj</groupId>
-            <artifactId>opendj-grizzly</artifactId>
+            <artifactId>opendj-sdk-grizzly</artifactId>
         </dependency>
 
         <dependency>
@@ -73,7 +73,7 @@
 
         <dependency>
             <groupId>org.forgerock.opendj</groupId>
-            <artifactId>opendj-core</artifactId>
+            <artifactId>opendj-sdk-core</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
