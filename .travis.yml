@@ -16,7 +16,7 @@ branches:
    - master
 notifications:
  email:
-  - support@openam.org.ru
+  - open-identity-platform-opendj@googlegroups.com
 cache:
   directories:
   - $HOME/.m2
